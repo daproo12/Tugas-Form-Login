@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Log In</title>
+</head>
+<body id="background">
+    <form id="form" class="form-login" method="POST" action="#">
+        <legend>Login HERE</legend>
+
+        <div class="form-group">
+            <label class="label"><span class="fa fa-user icon" style="padding-right: 10px;"></span>Username</label>
+            <div>
+                <input id="username" class="box" name="username" type="text" placeholder="Enter your username" required="" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="label"><span class="fa fa-key icon" style="padding-right: 10px;"></span>Password</label>
+            <div>
+                <input id="password" class="box" name="password" type="password" placeholder="Enter your password" required="">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <a href="#">
+                    <button type="submit">Login</button>
+                </a>
+            </div>
+        </div>
+    </form>
+    <div class="ifmodal">
+        <div class="ifmodaldialog">
+            <div class="ifmodalcontent">
+                <p>Success</p>
+            </div>
+        </div>
+    </div>
+    <div class="ifmodalfalse">
+        <p>invalid username or password</p>
+    </div>
+    <div class="bgfinish">
+    </div>
+</body>
+<script src="jsformlogin.js"></script>
+</html>

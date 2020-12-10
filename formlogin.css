@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffce46dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 600px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.form-login{
+    width: 350px;
+    background: #38639adb;
+    border-radius: 8px;
+    border: 1px solid #bec974db;
+    padding: 0px 15px;
+}
+.label{
+    font-size: 14px;
+    font-family: Georgia;
+    font-weight: 500;
+    color: #f8bf28;
+}
+.form-login legend{
+    padding-top: 30px;
+    color: #f8bf28;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800px;
+    font-family: bignoodletitling;
+}
+.box{
+    background-color: rgba(58, 104, 145, 0.1);
+    color: black;
+    margin-top: 10px;
+}
+.form-login input, 
+.form-login input:focus{
+    background: #ebf5fc;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0px 0px 0px;
+}
+.form-login button{
+    cursor: pointer;
+    width: 75px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: rgb(99, 144, 164);
+    padding: 5px;
+    margin: 15px 0px 30px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+.form-login button:hover{
+    background-color: #846a009e;
+    color: antiquewhite;
+}
+.form-group{
+    flex-direction: row;
+    text-align: center;
+    margin: 20px 0px;
+}
+.ifmodal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0px;
+    display: none;
+    justify-content: center;
+}
+.ifmodal.show{
+    display: flex;
+    animation: fade .5s forwards;
+}
+.ifmodaldialog{
+    top: 0px;
+    width: 375px;
+    max-width: 375px;
+    height: 100px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 5px;
+    top: 0px;    
+}
+.ifmodalcontent{
+    margin: 20px;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: black;
+}
+.ifmodalcontent p{
+    text-align: left;
+    top: 40%;
+}
+.button-if{
+    float: right;
+    cursor: pointer;
+    width: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(34, 68, 82);
+    color: #ebf5fc;
+    padding: 5px 0px;
+    margin: 15px 0px 20px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+.ifmodalfalse{
+    position: fixed;
+    font-weight: bolder;
+    color: red;
+    justify-content: center;
+    display: none;
+    margin-top: 450px;
+}
+.ifmodalfalse.show{
+    display: flex;
+}
+.bgfinish.show{
+    display: flex;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    } 50% {
+        opacity: 1;
+        transform: scale(1.1);
+    } 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
